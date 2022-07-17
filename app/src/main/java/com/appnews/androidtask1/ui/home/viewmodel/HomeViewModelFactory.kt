@@ -1,4 +1,4 @@
-package com.appnews.androidtask1.ui.home
+package com.appnews.androidtask1.ui.home.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

@@ -1,4 +1,4 @@
-package com.appnews.androidtask1.ui.home
+package com.appnews.androidtask1.ui.home.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData

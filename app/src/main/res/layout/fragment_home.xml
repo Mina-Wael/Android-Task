@@ -4,19 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.view.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/find_out_best"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_findOut_best"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/find_out_best" />
+
+            <ImageView
+                android:id="@+id/offers_image"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/offers_homs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_categories" />
+
+            <TextView
+                android:id="@+id/save_offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="@string/home_offers"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintEnd_toStartOf="@id/offers_image"
+                app:layout_constraintTop_toBottomOf="@id/rv_categories"
+                app:layout_constraintTop_toTopOf="@id/offers_image" />
+
+            <TextView
+                android:id="@+id/tv_more_offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="مشاهده المزيد"
+                app:layout_constraintBaseline_toBaselineOf="@id/save_offers"
+                app:layout_constraintStart_toEndOf="@id/offers_more_icon"
+                app:layout_constraintTop_toBottomOf="@id/rv_categories" />
+
+            <ImageView
+                android:id="@+id/offers_more_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more_arrow"
+                app:layout_constraintBottom_toBottomOf="@id/tv_more_offers"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_categories"
+                app:layout_constraintTop_toTopOf="@id/tv_more_offers" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
