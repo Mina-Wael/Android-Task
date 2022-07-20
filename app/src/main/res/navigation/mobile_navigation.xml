@@ -3,13 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/login">
 
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.appnews.androidtask1.ui.home.view.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_saveOffers"
+            app:destination="@id/saveOffers" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +26,26 @@
         android:name="com.appnews.androidtask1.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/saveOffers"
+        android:name="com.appnews.androidtask1.ui.saveoffers.SaveOffers"
+        android:label="fragment_save_offers"
+        tools:layout="@layout/fragment_save_offers" >
+        <action
+            android:id="@+id/action_saveOffers_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <argument
+            android:name="lm"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.appnews.androidtask1.ui.login.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.appnews.androidtask1.ui.register.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
 </navigation>

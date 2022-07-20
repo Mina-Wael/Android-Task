@@ -5,4 +5,22 @@
     <string name="title_notifications">Notifications</string>
     <string name="home_findOut_best">اكتشف احسن الاثاث</string>
     <string name="home_offers">عروض التوفير</string>
+    <string name="tv_offer_price">سعر العرض :</string>
+    <string name="login_text">تسجيل الدخول</string>
+    <string name="email_hint">البريد الالكترونى او رقم الهاتف</string>
+    <string name="btn_login_text">تسجيل الدخول</string>
+    <string name="forget_pass_txt">نسيت كلمه السر؟</string>
+    <string name="login_facebook">تسجيل عن طريق الفيسبوك</string>
+    <string name="login_google">تسجيل عن طريق جوجل</string>
+    <string name="have_no_account">ليس لديك حساب ؟ تسجيل</string>
+    <string name="register_txt">تسجيل</string>
+    <string name="password">كلمه السر</string>
+    <string name="create_account">انشاء حساب</string>
+    <string name="name">الاسم</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="phone_num">رقم الهاتف</string>
+    <string name="address">العنوان</string>
+    <string name="password_again">تاكيد كلمه السر</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="have_account_text">لديك حساب ؟ تسجبل دخول</string>
 </resources>

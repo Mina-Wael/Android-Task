@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MinaTasks/app/src/main/res/drawable/card_shape.xml" value="0.1235" />
+        <entry key="..\:/MinaTasks/app/src/main/res/drawable/et_background.xml" value="0.1235" />
         <entry key="..\:/MinaTasks/app/src/main/res/drawable/more_arrow.xml" value="0.1235" />
         <entry key="..\:/MinaTasks/app/src/main/res/layout/activity_main.xml" value="0.1875" />
         <entry key="..\:/MinaTasks/app/src/main/res/layout/category_row.xml" value="0.1875" />
         <entry key="..\:/MinaTasks/app/src/main/res/layout/fragment_home.xml" value="0.1875" />
+        <entry key="..\:/MinaTasks/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/MinaTasks/app/src/main/res/layout/fragment_register.xml" value="0.22" />
+        <entry key="..\:/MinaTasks/app/src/main/res/layout/fragment_save_offers.xml" value="0.1875" />
         <entry key="..\:/MinaTasks/app/src/main/res/layout/save_offers_row.xml" value="0.18645833333333334" />
       </map>
     </option>

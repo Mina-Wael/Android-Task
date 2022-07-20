@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.view.HomeFragment">
+    tools:context=".ui.home.view.HomeFragment"
+    android:padding="@dimen/_5sdp"
+    >
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -78,6 +80,7 @@
                 app:layout_constraintTop_toBottomOf="@id/rv_categories"
                 app:layout_constraintTop_toTopOf="@id/tv_more_offers" />
 
+            <include android:id="@+id/save_card" layout="@layout/save_offers_row" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

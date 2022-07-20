@@ -6,16 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/_5sdp"
-    android:elevation="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp"
     app:cardCornerRadius="@dimen/_10sdp"
     app:layout_constraintTop_toBottomOf="@id/save_offers"
+    android:layout_margin="@dimen/_5sdp"
 
     >
+    <FrameLayout
+        android:background="#808080"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        /> <FrameLayout
+        android:background="#808080"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        />
+
+    <FrameLayout
+        android:background="#808080"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        />
+    <FrameLayout
+        android:background="#808080"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_gravity="bottom"
+        />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/_5sdp">
+        android:padding="@dimen/_5sdp"
+        >
 
         <TextView
             android:id="@+id/save_offer_name"
@@ -146,10 +171,60 @@
 
         </LinearLayout>
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item4_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            tools:src="@drawable/offers_homs"
+            app:layout_constraintTop_toBottomOf="@id/linear3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+        <TextView
+            android:id="@+id/item4_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/linear3"
+            app:layout_constraintEnd_toStartOf="@id/item4_image"
+            app:layout_constraintTop_toTopOf="@id/item4_image"
+            app:layout_constraintBottom_toBottomOf="@id/item4_image"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_15ssp"
+            tools:text="dsadsa"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tv_save_price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item4_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/tv_offer_price"
+            android:textSize="@dimen/_20ssp"
+            />
+        <TextView
+            android:id="@+id/tv_save_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item4_image"
+            app:layout_constraintEnd_toStartOf="@id/tv_save_price_txt"
+            app:layout_goneMarginEnd="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="@id/tv_save_price_txt"
+            app:layout_constraintBottom_toBottomOf="@id/tv_save_price_txt"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_save_price_txt"
+            />
+
         <ImageView
-            android:layout_width="@dimen/_200sdp"
-            android:layout_height="@dimen/_200sdp"
-            android:src="@drawable/offers_homs"
+            android:id="@+id/base_image"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_170sdp"
+            tools:src="@drawable/offers_homs"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
